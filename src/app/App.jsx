@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { Routes, Route, Navigate} from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import MedicosPage from './../features/medicos/MedicosPage';
 import LoginPage from "../features/auth/LoginPage";
 import MainLayout from "./layout/MainLayout";
@@ -27,7 +27,6 @@ export default function App() {
 
   return (
     <Routes>
-
       {/* Login */}
       <Route
         path="/"
@@ -48,16 +47,13 @@ export default function App() {
       >
         <Route index element={<Home />} />
         <Route path="coberturas" element={<Coberturas />} />
-
         <Route path="turnos/reservar-turno" element={<ReservarTurno />} />
         <Route path="turnos/reservar-estudio" element={<ReservarEstudio />} />
         <Route path="turnos/agendados" element={<TurnosAgendados />} />
         <Route path="turnos/profesionales" element={<Profesionales />} />
         <Route path="turnos/resultados" element={<Resultados />} />
-
         <Route path="*" element={<NotFound />} />
       </Route>
-
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
