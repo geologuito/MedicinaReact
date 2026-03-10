@@ -1,73 +1,63 @@
 Listado de rutas de carpetas
-El número de serie del volumen es 5220-BD1F
-C:.
-|   eslint.config.js
-|   estructura.txt
-|   index.html
-|   package-lock.json
-|   package.json
-|   README.md
-|   tailwind.config.js
-|   vite.config.js
+El número de serie del volumen es 00000090 5220:BD1F
+C:\USERS\GONZA\DESKTOP\HOSPITAL\MEDICINAREACT\SRC
+|   main.jsx
+|   tailwind.css
 |   
-+---node_modules
-|                
-+---pdfs
-|       prueba.pdf
++---app
+|   |   App.jsx
+|   |   
+|   +---layout
+|   |       MainLayout.jsx
+|   |       
+|   \---routes
+|           AppRoutes.jsx
+|           ProtectedRoute.jsx
+|           
++---assets
++---components
+|   \---ui
+|           Button.jsx
+|           Card.jsx
+|           Icon.jsx
+|           Modal.jsx
+|           NavItem.jsx
+|           PageTitle.jsx
+|           
++---features
+|   +---auth
+|   |       AuthContext.js
+|   |       AuthProvider.jsx
+|   |       LoginPage.jsx
+|   |       useAuth.js
+|   |       
+|   +---medicos
+|   |   |   MedicosPage.jsx
+|   |   |   useMedicos.js
+|   |   |   
+|   |   \---components
+|   |           CardsMedicos.jsx
+|   |           TablaMedicos.jsx
+|   |           
+|   +---pacientes
+|   +---portal
+|   |   \---pages
+|   |           Coberturas.jsx
+|   |           Home.jsx
+|   |           NotFound.jsx
+|   |           Profesionales.jsx
+|   |           ReservarEstudio.jsx
+|   |           ReservarTurno.jsx
+|   |           Resultados.jsx
+|   |           TurnosAgendados.jsx
+|   |           
+|   \---resultados
+|       |   ResultadosPage.jsx
+|       |   
+|       \---components
++---services
+|       apiClient.js
 |       
-+---public
-|       vite.svg
-|       
-\---src
-    |   main.jsx
-    |   tailwind.css
-    |   
-    +---app
-    |   |   App.jsx
-    |   |   
-    |   +---layout
-    |   |       MainLayout.jsx
-    |   |       
-    |   \---routes
-    |           AppRoutes.jsx
-    |           
-    +---assets
-    |       react.svg
-    |       
-    +---components
-    |   \---ui
-    |           Button.jsx
-    |           Icon.jsx
-    |           Modal.jsx
-    |           NavItem.jsx
-    |           
-    +---features
-    |   +---auth
-    |   |       LoginPage.jsx
-    |   |       
-    |   +---medicos
-    |   |   |   MedicosPage.jsx
-    |   |   |   useMedicos.js
-    |   |   |   
-    |   |   \---components
-    |   |           CardsMedicos.jsx
-    |   |           TablaMedicos.jsx
-    |   |           
-    |   +---pacientes
-    |   \---portal
-    |       \---pages
-    |               Coberturas.jsx
-    |               Home.jsx
-    |               NotFound.jsx
-    |               Profesionales.jsx
-    |               ReservarEstudio.jsx
-    |               ReservarTurno.jsx
-    |               Resultados.jsx
-    |               TurnosAgendados.jsx
-    |               
-    +---services
-    |       apiClient.js
-    |       
-    \---styles
-            global.css
+\---styles
+        global.css
         
